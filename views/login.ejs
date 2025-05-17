@@ -142,9 +142,12 @@
                 <div class="forgot-password"> <a href="#">Forgot Password?</a> 
                 </div> 
                 <div class="form-group"> 
-                    <div class="captcha-box">3F5K9</div> 
-                    <input type="text" name="captcha" placeholder="Enter CAPTCHA above" value="3F5K9" required /> 
-                </div> 
+                    <div class="captcha-box">  
+                                            <!-- ...existing form fields... -->
+                                              <div class="g-recaptcha" data-sitekey="6LcqdD4rAAAAAJWTMsBllP5JaabDMLhQXzSTJSdi"></div>
+                                              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                           <!-- ...submit button... -->
+                    </div> 
                 <button type="submit">Login</button> 
             </form> <div class="footer"> &copy; 2025 Cybersecurity Law System. All rights reserved. </div> 
         </div> 
