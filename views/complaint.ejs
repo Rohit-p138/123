@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cyber Crime Complaint Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #001f3f, #00c6ff);
+      color: #fff;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #ffffff;
+      color: #333;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-container:hover {
+      transform: scale(1.01);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1e3a8a;
+      font-weight: 600;
+      
+  transform: scale(1.05); /* Slightly grow the text */
+  color:black; /* Change color to orange on hover */
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.8); /* Glowing text shadow */
+}
+    
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px #007bff88;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #0055a5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #eee;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Cyber Crime Complaint Form</h2>
+    <form method="post" action="/user/complaint/:id">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Contact Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label for="crime-type">Type of Cyber Crime:</label>
+      <select id="crime-type" required>
+        <option value="">-- Select --</option>
+        <option>Phishing / Online Fraud</option>
+        <option>Cyberbullying / Harassment</option>
+        <option>Social Media Abuse</option>
+        <option>Financial Fraud</option>
+        <option>Hacking / Unauthorized Access</option>
+        <option>Others</option>
+      </select>
+
+      <label for="details">Incident Details:</label>
+      <textarea id="details" rows="5" required></textarea>
+
+      <label for="evidence">Provide Link/Screenshot (optional):</label>
+      <input type="text" id="evidence">
+
+      <button type="submit">Submit Complaint</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Cyber Law Awareness Portal | All Rights Reserved
+  </footer>
+
+</body>
+</html>

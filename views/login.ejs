@@ -1,0 +1,152 @@
+<!DOCTYPE html> <html lang="en">
+  <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Cybersecurity Law System Login</title> <!-- Google Fonts --> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@500&family=Roboto&display=swap" rel="stylesheet" /> 
+    <style>
+       body { 
+        margin: 0; 
+        font-family: 'Roboto', sans-serif; 
+        background: linear-gradient(135deg, #007BFF, #87CEFA); 
+        height: 100vh; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 15px; }
+      
+      .login-container {
+        background-color: #fff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        animation: fadeIn 1s ease-in-out;
+      }
+      
+      .login-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-family: 'Merriweather', serif;
+        color: #003366;
+      }
+      
+      .form-group {
+        margin-bottom: 18px;
+      }
+      
+      .form-group input {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        transition: border-color 0.3s;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .form-group input:focus {
+        border-color: #007BFF;
+        outline: none;
+      }
+      
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      button:hover {
+        background-color: #0052a3;
+      }
+      
+      .forgot-password {
+        display: block;
+        text-align: right;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        font-size: 0.9em;
+      }
+      
+      .forgot-password a {
+        text-decoration: none;
+        color: #007BFF;
+      }
+      
+      .forgot-password a:hover {
+        text-decoration: underline;
+      }
+      
+      .captcha-box {
+        background: #f2f2f2;
+        border: 1px dashed #ccc;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 22px;
+        letter-spacing: 3px;
+        color: #333;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        user-select: none;
+      }
+      
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #666;
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @media (max-width: 500px) {
+        .login-container {
+          padding: 30px 20px;
+        }
+      
+        h2 {
+          font-size: 1.4em;
+        }
+      
+        button {
+          font-size: 15px;
+        }
+      }
+      </style> 
+      </head> 
+      <body> 
+        <div class="login-container"> 
+            <h2>Law System Login</h2> 
+            <form action="/user/login" method="POST"> 
+
+                <div class="form-group"> <input type="text" name="username" placeholder="Username" required /> 
+                </div> 
+                <div class="form-group"> <input type="password" name="password" placeholder="Password" required /> 
+                </div> 
+                <div class="forgot-password"> <a href="#">Forgot Password?</a> 
+                </div> 
+                <div class="form-group"> 
+                    <div class="captcha-box">3F5K9</div> 
+                    <input type="text" name="captcha" placeholder="Enter CAPTCHA above" value="3F5K9" required /> 
+                </div> 
+                <button type="submit">Login</button> 
+            </form> <div class="footer"> &copy; 2025 Cybersecurity Law System. All rights reserved. </div> 
+        </div> 
+    </body> 
+    </html>

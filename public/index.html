@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LAW SYSTEM(cybersecurity)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+   <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b> LAW SYSTEM &#40cybersecurity&#41 </b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="http://localhost:8080/#" class="nav-link active" aria-current="page" href="#" style="color: #ffffff;">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://localhost:8080/user/login" class="nav-link" href="#" style="color: #ffffff;">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://localhost:8080/user/signup" class="nav-link" href="#" style="color: #ffffff;">SIGN-UP</a>
+            </li>
+            <li class="nav-item">
+                <a href="http://localhost:8080/user/:laws" class="nav-link" href="#" style="color: #ffffff;">CYBERSECURITY LAWS</a>
+            </li>
+            <li class="nav-item">
+                <a href="http://localhost:8080/user/complaint/:id" class="nav-link" href="#" style="color: #ffffff;">FILE A COMPLAINT</a>
+            </li>
+            <li class="nav-item">
+                <a href="http://localhost:8080/user/contact/:us" class="nav-link" href="#" style="color: #ffffff;">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+    <div class="w-auto p-3" style="border-color: #28193D;">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+                <img src="WhatsApp Image 2025-05-08 at 11.15.23_8d064c691.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="WhatsApp Image 2025-05-08 at 11.15.32_bd29aa2f2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="WhatsApp Image 2025-05-08 at 11.15.42_68324c723.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="WhatsApp Image 2025-05-08 at 11.15.49_dfd3af754.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="WhatsApp Image 2025-05-08 at 12.50.22_c010f8b244.jpg" class="d-block w-100" alt="...">
+          </div> 
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    
+
+
+    <section class="First" style="background-color: #3847ac; height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="text-center text-white" style="margin-top: 20px;">
+            <h1 class="display-4"><B>Welcome to the Online Law System &#40cybersecurity&#41 </B></h1>
+            <p class="lead"><h2>Your one-step solution for all cybersecurity laws and regulations.</h2></p>
+            <p class="lead">Stay updated about the latest cybersecurity laws and regulations.</p>
+            <a href="#" type="button" class="btn btn-outline-primary" style="background-color: #1e2021; border-color: #4CC9F0;">Get Started</a> 
+            <a href="#" type="button" class="btn btn-outline-info" style="background-color: #ffffff; border-color: #FF0000;">Learn More</a>
+            <br><br>
+            <div id="chat"></div>
+            <input type="text" id="userInput" placeholder="Ask problems..." />
+            <button onclick="sendMessage()">Search</button>
+
+            <!-- <script>
+                async function sendMessage() {
+                const input = document.getElementById('userInput');
+                const message = input.value;
+                input.value = '';
+
+                const res = await fetch('/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message }),
+             });
+
+                const data = await res.json();
+                document.getElementById('chat').innerHTML += `<p><b>You:</b> ${message}</p><p><b>Bot:</b> ${data.reply}</p>`;
+             }
+             </script> -->
+        </div>
+    </section>
+    
+
+  
+    <section class="Second" style="background-color: #D9D8D9; height: 100vh; display: flex; align-items: center; justify-content: center;">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+           <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Information Technology Act, 2000 (IT Act)
+                </button>
+              </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  1. The foundational law for cybercrime, data protection, and electronic records.
+                  <br>
+                  Key provisions:
+                  
+                  A. Section 43 &ndash; Unauthorized access and data theft
+                  <br>
+                  B. Section 66 &ndash; Hacking and identity theft
+                  <br>
+                  C. Section 66F &ndash; Cyber terrorism
+                  <br>
+                  D. Section 67 &ndash; Obscene content
+                  <br>
+                </div>
+            </div>
+            </div>
+          
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Digital Personal Data Protection Act, 2023 (DPDP Act)
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  1. Regulates processing of digital personal data.
+                  <br>
+                  2. Introduces roles like Data Fiduciary and Consent Manager.
+                  <br>
+                  3. Penalties for data breaches and non-compliance.
+                  <br>
+                  <a href="//www.meity.gov.in/data-protection-framework">🔗 MeitY Data Protection Page</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    National Cyber Security Policy, 2013
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    1. Government policy for cyber readiness, workforce development, and infrastructure protection.
+                    <br>
+                    2. Encourages PPP (Public-Private Partnerships) and international cooperation.
+                    <br>
+                    <a href="https://www.meity.gov.in/writereaddata/files/National%20Cyber%20Security%20Policy%20(1).pdf">🔗 Policy PDF
+
+                    </a>
+                </div>
+            </div>
+           </div>
+          
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Indian Penal Code (IPC) Cyber Provisions
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Additional legal coverage under traditional criminal law:
+                      <br>
+                      1. Section 463 &ndash; Forgery
+                      <br>
+                      2. Section 379 &ndash; Theft (for data theft)
+                      <br>
+                      3. Section 420 &ndash; Cheating (for phishing and fraud)
+                      <br>
+                      4. Section 468/469 &ndash; Forgery for cheating/harming reputation
+                    </div>
+                </div>
+            </div>
+          
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                      RBI Cybersecurity Framework (for Banks and NBFCs)
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      1. Mandatory framework for securing banking infrastructure and customer data.
+                      <br>
+                      2. Incident reporting, risk management, audit trails.
+                      <br>
+                      <a href="https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=10435">🔗 RBI Circular &ndash; 2016</a>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                      NCIIPC Critical Information Infrastructure Protection Guidelines
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      1. National Critical Information Infrastructure Protection Centre issues standards and alerts.
+                      <br>
+                      2. Covers power, finance, telecom, transport, etc.
+                      <br>
+                      <a href="https://nciipc.gov.in/">🔗 NCIIPC Official Site</a>
+                    </div>
+            </div>
+           </div>
+          
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                    CERT-In Cybersecurity Directions (2022)
+                  </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    1. Mandatory incident reporting within 6 hours.
+                    <br>
+                    2. Obligations for VPN providers, cloud service providers, and data centers.
+                    <br>
+                    3. Log retention and synchronized time standards.
+                    <br>
+                    <a href="https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf">🔗 CERT-In Directions PDF</a>
+                  </div>
+              </div>
+           </div>
+         </div>
+    </section>
+
+    <section class="">
+        
+        <footer class="bg-body-tertiary" >
+          
+          <div class="container p-4">
+            
+            <div class="row">
+              
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Documentations</h5>
+      
+                <p>
+                  Cybersecurity laws in India are primarily governed by the Information Technology Act, 2000 (IT Act), which provides a legal framework for addressing cybercrimes, data protection, and electronic commerce.<br>
+                  The Act was significantly amended in 2008 to include provisions for identity theft, data breaches, and cyber terrorism. <br>Supporting the IT Act, the Indian Computer Emergency Response Team (CERT-In) issues operational guidelines for organizations, mandating swift incident reporting and data retention practices.<br>
+                  Additionally, the Digital Personal Data Protection Act, 2023 (DPDP Act) establishes rules for handling personal digital data, emphasizing user consent and accountability.<br> Indias National Cyber Security Policy, 2013 outlines strategies for protecting critical infrastructure, building cybersecurity capabilities, and fostering cooperation between government and private sectors. <br>
+                  Regulatory bodies such as the RBI, UIDAI, and NCIIPC also issue sector-specific cybersecurity standards. <br>
+                  Collectively, these documents create a multi-layered legal and regulatory framework for ensuring cybersecurity in India.
+                </p>
+              </div>
+             
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Cyber Laws</h5>
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="The Bankers Books Evidence Act, 1891.pdf" class="text-body">Page 1</a>
+                  </li>
+                  <li>
+                    <a href="The Code of Criminal Procedure, 1973.pdf" class="text-body">Page 2</a>
+                  </li>
+                  <li>
+                    <a href="The Companies Act, 2013.pdf" class="text-body">Page 3</a>
+                  </li>
+                  <li>
+                    <a href="The Indian Evidence Act, 1872.pdf" class="text-body">Page 4</a>
+                  </li>
+                  <li>
+                    <a href="The Indian Penal Code 1860.pdf" class="text-body">Page 5</a>
+                  </li>
+                  <li>
+                    <a href="The Indian Telegraph Act, 1885.pdf" class="text-body">Page 6</a>
+                  </li>
+                  <li>
+                    <a href="The Information Technology Act, 2000.pdf" class="text-body">Page 7</a>
+                  </li>
+                  <li>
+                    <a href="The Prevention of Money Laundering Act 2002.pdf" class="text-body">Page 8</a>
+                  </li>
+                  <li>
+                    <a href="The Reserve Bank of India Act, 1934.pdf" class="text-body">Page 9</a>
+                  </li>
+                  <li>
+                    <a href="The Telecom Regulatory Authority of India Act, 1997.pdf" class="text-body">Page 10</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Complaint Procedure</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://localhost:8080/user/login" class="text-body">Login</a>
+                  </li>
+                  <li>
+                    <a href="http://localhost:8080/user/complaint/:id" class="text-body">File It</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">Track Process</a>
+                  </li>
+                  <li>
+                    <a href="http://localhost:8080/user/contact/:us" class="text-body">Feedback</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+           
+          </div>
+        
+    
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright:
+            <a class="text-body" href="https://lawsystemcyber.com/">lawsystemcyber.com</a>
+          </div>
+          
+        </footer>
+        
+    </section>
+
+</body>
+</html>
