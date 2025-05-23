@@ -1,0 +1,12 @@
+
+
+USE user;
+
+CREATE TABLE contactus (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    full_name VARCHAR(100),
+    email VARCHAR(255) NOT NULL,
+    subject VARCHAR(100) NOT NULL,
+    message LONGTEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -94,15 +94,15 @@
 
   <div class="form-container">
     <h2>Cyber Crime Complaint Form</h2>
-    <form method="post" action="/user/complaint/:id">
+    <form action="/user/complaint/:id" method="post">
       <label for="name">Full Name:</label>
-      <input type="text" id="name" required>
+      <input type="text" name="full_name" id="name" required>
 
       <label for="email">Email Address:</label>
-      <input type="email" id="email" required>
+      <input type="email" name="email" id="email" required>
 
       <label for="phone">Contact Number:</label>
-      <input type="tel" id="phone" required>
+      <input type="tel" name="contact_number" id="phone" required>
 
       <label for="crime-type">Type of Cyber Crime:</label>
       <select id="crime-type" required>
@@ -116,10 +116,10 @@
       </select>
 
       <label for="details">Incident Details:</label>
-      <textarea id="details" rows="5" required></textarea>
+      <textarea id="details" name="incident_details" rows="5" required></textarea>
 
       <label for="evidence">Provide Link/Screenshot (optional):</label>
-      <input type="text" id="evidence">
+      <input type="text" id="evidence" name="evidence">
 
       <button type="submit">Submit Complaint</button>
     </form>

@@ -132,24 +132,34 @@
       </head> 
       <body> 
         <div class="login-container"> 
-            <h2>Law System Login</h2> 
-            <form action="/user/login" method="POST"> 
+            <h2>Law System Login</h2>
 
-                <div class="form-group"> <input type="text" name="username" placeholder="Username" required /> 
+            <form action="/user/login" method="POST" > 
+
+                <div class="form-group"> <input type="text" name="name" placeholder="Username"  required  /> 
+                  
                 </div> 
                 <div class="form-group"> <input type="password" name="password" placeholder="Password" required /> 
+
                 </div> 
-                <div class="forgot-password"> <a href="#">Forgot Password?</a> 
-                </div> 
+                <div class="container text-center">
+                  <div class="forgot-password"> 
+                    <div class="row row-cols-2">
+                       <div class="col"><a href="#">Forgot Password?</a></div>
+                       
+                       <div class="col"><a href="http://localhost:8080/user/signup">New Account</a></div>
+                     
+                    </div>
+                  </div>
+                </div>
                 <div class="form-group"> 
-                    <div class="captcha-box">  
-                                            <!-- ...existing form fields... -->
-                                              <div class="g-recaptcha" data-sitekey="6LcqdD4rAAAAAJWTMsBllP5JaabDMLhQXzSTJSdi"></div>
-                                              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                                           <!-- ...submit button... -->
-                    </div> 
-                <button type="submit">Login</button> 
-            </form> <div class="footer"> &copy; 2025 Cybersecurity Law System. All rights reserved. </div> 
+
+                     <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div class="footer"> &copy; 2025 Cybersecurity Law System. All rights reserved. </div> 
         </div> 
     </body> 
     </html>
+
+    
